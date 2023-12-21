@@ -18,6 +18,21 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(newMethod("Esra"));
 
         username = "";
+
+        makeMusicians();
+        makeSimpsons();
+    }
+
+    public void makeSimpsons() {
+        Simpsons homer = new Simpsons("Homer", 50, "Nuclear");
+        homer.setAge(51);
+        System.out.println(homer.getAge());
+    }
+
+    public void makeMusicians() {
+
+        Musicians james = new Musicians("James","guitar",50 );
+        System.out.println(james.instrument);
     }
 
     public void testMethod() {
